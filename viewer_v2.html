@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGOTERIOR. 전자책 v2.0</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.turnjs.com/lib/turn.min.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .book-container {
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #flipbook {
+            width: 100%;
+            height: 600px;
+        }
+        #flipbook .page {
+            width: 100%;
+            height: 100%;
+        }
+        .download-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">LOGOTERIOR.</div>
+    <div class="book-container">
+        <div id="flipbook">
+            <div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-01.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-02.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-03.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-04.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-05.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-06.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-07.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-08.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-09.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-10.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-11.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-12.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-13.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-14.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-15.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-16.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-17.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-18.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-19.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-20.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-21.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-22.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-23.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-24.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-25.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-26.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-27.jpg"></div>
+<div class="page"><img src="ebook_v2_pages/18eade8c-3d52-441a-8a3e-8b7c5f038297-28.jpg"></div>
+
+        </div>
+    </div>
+    <a href="로고테리어 디자인 스튜디오_회사소개서_v.2.0.pdf" class="download-btn" download>📥 PDF 다운로드</a>
+    <script>
+        $('#flipbook').turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+    </script>
+</body>
+</html>
